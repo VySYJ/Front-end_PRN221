@@ -1,0 +1,221 @@
+/*Code css vui lòng để dưới cùng giùm*/
+
+/*start header*/
+body {
+    font-family: "Inter", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.menu {
+    width: 380px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-link {
+    font-size: 16px;
+    font-weight: 400;
+    color: #584f49;
+}
+
+.home {
+    color: #38c977;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+li > a {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+li > a::after {
+    content: "";
+    margin: auto;
+    height: 2px;
+    width: 0;
+    top: 5px;
+    background: transparent;
+    transition: all 0.3s;
+}
+
+li > a:hover::after,
+li > a.active-nav::after {
+    float: left;
+    width: 15%;
+    background: #27b472;
+}
+
+.header-container {
+    display: flex;
+    height: 90px;
+    margin-top: 36px;
+    border-radius: 6px;
+    background: #ffffff;
+    box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.05);
+}
+
+.header-auth {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    margin-left: 650px;
+    margin-right: 32px;
+}
+
+.singin {
+    font-weight: 600;
+    margin-right: 36px;
+    color: #353535;
+}
+
+.singin:hover {
+    color: #ea8d5b;
+}
+
+.singup {
+    background: #4d4e4d;
+    border: 1px solid #4d4e4d;
+    border-radius: 6px;
+    padding: 11px 31px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.singup:hover {
+    background: #178b5c;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+.logo {
+    width: 165px;
+    height: 62px;
+    margin-bottom: 5px;
+}
+.alogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*end header*/
+
+/*search bar*/
+.searchbar {
+    position: relative;
+    height: 40px;
+    max-width: 450px;
+    width: 100%;
+    background: #fff;
+    margin: 0 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    margin-left: 1010px;
+    margin-top: 20px;
+}
+.searchbar i,
+.searchbar .button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.searchbar i {
+    left: 10px;
+    font-size: 30px;
+    color: #707070;
+}
+.searchbar input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 13px;
+    font-weight: 400;
+    border: none;
+    padding: 0 15px 0 10px;
+    background-color: transparent;
+}
+.searchbar .button {
+    right: 0px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+    border: none;
+    padding: 13px 15px;
+    border-radius: 6px;
+    background-color: #34c379;
+    cursor: pointer;
+}
+.searchbar .button:active {
+    transform: translateY(-50%) scale(0.98);
+}
+
+/* footer*/
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #111;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 20px;
+    font-size: 14px;
+    color: #cacdd2;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+
+.socials a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+}
+/* footer*/
+
+/*Code css vui lòng để dưới này giùm*/
