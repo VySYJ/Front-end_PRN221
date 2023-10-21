@@ -1,57 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" />
     <title>OrderDetail</title>
-</head>
+    <!-- Link Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
+      integrity="sha512-HXXR0l2yMwHDrDyxJbrMD9eLvPe3z3qL3PPeozNTsiHJEENxx8DH2CxmV05iwG0dwoz5n4gQZQyYLUNt1Wdgfg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <div class="container">
-            <div class="header-container">
-                <a href="#" class="alogo"><img src="./image/be2_logo2.jpg" alt="#" class="logo"></a>
-                <ul class="menu">
-                    <li class="menu-item">
-                        <a href="#" class="menu-link home">Trang Chủ</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#" class="menu-link">Giới thiệu</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#" class="menu-link">Liên hệ</a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#" class="menu-link">Tư vấn</a>
-                    </li>
-                </ul>
-                <div class="header-auth">
-                    <a href="#" class="singin">Đăng nhập</a>
-                    <a href="#" class="singup">Đăng ký</a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="header-container">
+          <a href="#" class="alogo"
+            ><img src="./image/be2_logo2.jpg" alt="#" class="logo"
+          /></a>
+          <ul class="menu">
+            <li class="menu-item">
+              <a href="#" class="menu-link home">Trang Chủ</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">Giới thiệu</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">Liên hệ</a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link">Tư vấn</a>
+            </li>
+          </ul>
+          <div class="header-auth">
+            <a href="#" class="singin">Đăng nhập</a>
+            <a href="#" class="singup">Đăng ký</a>
+          </div>
         </div>
+      </div>
     </header>
     <main>
-        <section>
-            <!--Thiết kế trong này-->
-        </section>
+      <section class="section">
+        <!-- thết kế trong này -->
+        
+        <div class="nav">
+          <ul class="nav-list">
+            <li class="nav-title">Navigation</li>
+
+            <li class="nav-item">
+              <img src="./image/dashboard.jpg" alt="" class="img-logo">
+              Dasboard
+            </li>
+
+            <li class="nav-item active">
+              <img src="./image/order.jpg" alt="" class="img-logo">
+              Order History
+            </li>
+
+            <li class="nav-item">
+              <img src="./image/heart.jpg" alt="" class="img-logo">
+              Wishlist
+            </li>
+            <li class="nav-item">
+              <img src="./image/shopping.jpg" alt="" class="img-logo">
+              Shopping Cart
+            </li>
+            <li class="nav-item">
+              <img src="./image/setting.jpg" alt="" class="img-logo">
+              Setting</li>
+            <li class="nav-item">
+              <img src="./image/log_out.jpg" alt="" class="img-logo">
+              Log-out</li>
+          </ul>
+        </div>
+
+
+<div class="order-detail">
+          <div class="order-head">
+            <div class="order-head--title">
+              <p>Order Details</p>
+              <ul>
+                <li>April 24, 2021</li>
+                <li>3 Products</li>
+              </ul>
+            </div>
+            <a href="OderHistory.html" class="back-to">Back to List</a>
+          </div>
+          <div>
+            <div class="order-info">
+              <div class="order-address">
+                <table>
+                  <tr class="title">
+                    <th>Billing Address</th>
+             
+                  </tr>
+                  <tr class="name">
+                    <td>Dainne Russell</td>
+                    
+                  </tr>
+                  <tr class="address">
+                    <td>4140 Parker Rd. Allentown, New Mexico 31134</td>
+                  
+                  </tr>
+                  <tr class="email">
+                    <td>Email</td>
+                   
+                  </tr>
+                  <tr class="email-address">
+                    <td>dainne.ressell@gmail.com</td>
+                   
+                  </tr>
+                  <tr class="phone">
+                    <td>Phone</td>
+                    
+                  </tr>
+                  <tr class="phone-number">
+                    
+                    <td>(671) 555-0110</td>
+                  </tr>
+                </table>
+              </div>
+
+              <div class="order-price">
+                <div class="order-price-info">
+                  <div class="order-id">
+                    <p>Order id</p>
+                    <p>#4152</p>
+                  </div>
+                  <img src="./image/Line 20.svg" alt="">
+                  <div class="payment">
+                    <p>Payment Method:</p>
+                    <p>Paypal</p>
+                  </div>
+                </div>
+                <div class="total-price">
+                  <div class="sub-total">
+                    <p>Subtotal:</p>
+                    <p>$365.00</p>
+                  </div>
+                  <div class="discount">
+                    <p>Discount</p>
+                    <p>20%</p>
+                  </div>
+                  <div class="shipping">
+                    <p>Shipping</p>
+                    <p>Free</p>
+                  </div>
+                  <div class="total">
+                    <p>Total</p>
+                    <p>$84.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <table class="table-order">
+              <tr class="table-head">
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+              </tr>
+              <tr class="table-product">
+                <td> <img src="./image/product 1.png" alt="">
+                  Red Capsicum
+                </td>
+                <td>$14.00</td>
+                <td>x5</td>
+                <td style="color: #000;">$70.00</td>
+              </tr>
+              <tr class="table-product">
+                <td> <img src="./image/product 2.png" alt="">
+                  Green Capsicum
+                </td>
+                <td>$14.00</td>
+                <td>x2</td>
+                <td style="color: #000;">$70.00</td>
+              </tr>
+              <tr class="table-product">
+                <td> <img src="./image/product 3.png" alt="">
+                  Green Chili
+                </td>
+                <td>$26.70</td>
+                <td>x10</td>
+                <td style="color: #000;">$70.00</td>
+              </tr>
+          </div>
+        </div>
+      </table>
+        
+      </section>
+      
     </main>
     <footer>
-        <div class="footer-content">
-            <h3>Be2 Store</h3>
-            <p>Hãy cùng chúng tôi thực hiện hành trình mua sắm tiện lợi, an toàn và thú vị. Hãy khám phá trang web của
-                chúng tôi và trải nghiệm sự khác biệt mà chúng tôi mang lại ngay từ bây giờ!</p>
-            <ul class="socials">
-                <a href="#">Trang chủ</a>
-                <a href="#">Giới thiệu</a>
-                <a href="#">Liên hệ</a>
-                <a href="#">Tư vấn</a>
-            </ul>
-        </div>
+      <div class="footer-content">
+        <h3>Be2 Store</h3>
+        <p>
+          Hãy cùng chúng tôi thực hiện hành trình mua sắm tiện lợi, an toàn và
+          thú vị. Hãy khám phá trang web của chúng tôi và trải nghiệm sự khác
+          biệt mà chúng tôi mang lại ngay từ bây giờ!
+        </p>
+        <ul class="socials">
+          <a href="#">Trang chủ</a>
+          <a href="#">Giới thiệu</a>
+          <a href="#">Liên hệ</a>
+          <a href="#">Tư vấn</a>
+        </ul>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>

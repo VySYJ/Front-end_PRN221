@@ -3,7 +3,7 @@
 /*start header*/
 body {
     font-family: "Inter", sans-serif;
-    margin: 0 auto;
+    margin     : 0 auto;
 }
 
 a {
@@ -12,78 +12,78 @@ a {
 
 .wrapper {
     max-width: 1440px;
-    margin: 0 auto;
+    margin   : 0 auto;
 }
 
 .container {
     max-width: 100%;
-    margin: 0 auto;
+    margin   : 0 auto;
 }
 
 .menu {
-    width: 380px;
-    list-style: none;
-    display: flex;
-    align-items: center;
+    width          : 380px;
+    list-style     : none;
+    display        : flex;
+    align-items    : center;
     justify-content: space-between;
 }
 
 .menu-link {
-    font-size: 16px;
+    font-size  : 16px;
     font-weight: 400;
-    color: #584f49;
+    color      : #584f49;
 }
 
 .home {
-    color: #38c977;
+    color      : #38c977;
     font-weight: 600;
-    font-size: 16px;
+    font-size  : 16px;
 }
 
-li > a {
+li>a {
     text-decoration: none;
-    display: inline-block;
-    position: relative;
+    display        : inline-block;
+    position       : relative;
 }
 
-li > a::after {
-    content: "";
-    margin: auto;
-    height: 2px;
-    width: 0;
-    top: 5px;
+li>a::after {
+    content   : "";
+    margin    : auto;
+    height    : 2px;
+    width     : 0;
+    top       : 5px;
     background: transparent;
     transition: all 0.3s;
 }
 
-li > a:hover::after,
-li > a.active-nav::after {
-    float: left;
-    width: 15%;
+li>a:hover::after,
+li>a.active-nav::after {
+    float     : left;
+    width     : 15%;
     background: #27b472;
 }
 
 .header-container {
-    display: flex;
-    height: 90px;
-    margin-top: 36px;
+    display      : flex;
+    height       : 90px;
+    margin-top   : 36px;
     border-radius: 6px;
-    background: #ffffff;
-    box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.05);
+    background   : #ffffff;
+    box-shadow   : 0px 18px 36px rgba(0, 0, 0, 0.05);
 }
 
 .header-auth {
-    align-items: center;
+    align-items    : center;
     justify-content: space-between;
-    display: flex;
-    margin-left: 640px;
-    margin-right: 32px;
+    display        : flex;
+    margin-left    : 640px;
+    margin-right   : 32px;
 }
 
 .singin {
-    font-weight: 600;
+    font-weight : 600;
     margin-right: 36px;
-    color: #353535;
+    color       : #353535;
 }
 
 .singin:hover {
@@ -91,130 +91,551 @@ li > a.active-nav::after {
 }
 
 .singup {
-    background: #4d4e4d;
-    border: 1px solid #4d4e4d;
+    background   : #4d4e4d;
+    border       : 1px solid #4d4e4d;
     border-radius: 6px;
-    padding: 11px 31px;
-    font-weight: 600;
-    color: #ffffff;
+    padding      : 11px 31px;
+    font-weight  : 600;
+    color        : #ffffff;
 }
 
 .singup:hover {
     background: #178b5c;
-    border: 1px solid #ffffff;
-    color: #ffffff;
+    border    : 1px solid #ffffff;
+    color     : #ffffff;
 }
 
 .logo {
-    width: 165px;
-    height: 62px;
+    width        : 165px;
+    height       : 62px;
     margin-bottom: 5px;
 }
+
 .alogo {
-    display: flex;
+    display        : flex;
     justify-content: center;
-    align-items: center;
+    align-items    : center;
 }
 
 /*end header*/
 
 /*search bar*/
 .searchbar {
-    position: relative;
-    height: 40px;
-    max-width: 450px;
-    width: 100%;
-    background: #fff;
-    margin: 0 20px;
+    position     : relative;
+    height       : 40px;
+    max-width    : 450px;
+    width        : 100%;
+    background   : #fff;
+    margin       : 0 20px;
     border-radius: 8px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    margin-left: 1010px;
-    margin-top: 20px;
+    box-shadow   : 0 5px 10px rgba(0, 0, 0, 0.1);
+    margin-left  : 1010px;
+    margin-top   : 20px;
 }
+
 .searchbar i,
 .searchbar .button {
-    position: absolute;
-    top: 50%;
+    position : absolute;
+    top      : 50%;
     transform: translateY(-50%);
 }
+
 .searchbar i {
-    left: 10px;
+    left     : 10px;
     font-size: 30px;
-    color: #707070;
+    color    : #707070;
 }
+
 .searchbar input {
-    height: 100%;
-    width: 100%;
-    outline: none;
-    font-size: 13px;
-    font-weight: 400;
-    border: none;
-    padding: 0 15px 0 10px;
+    height          : 100%;
+    width           : 100%;
+    outline         : none;
+    font-size       : 13px;
+    font-weight     : 400;
+    border          : none;
+    padding         : 0 15px 0 10px;
     background-color: transparent;
 }
+
 .searchbar .button {
-    right: 0px;
-    font-size: 12px;
-    font-weight: 400;
-    color: #fff;
-    border: none;
-    padding: 13px 15px;
-    border-radius: 6px;
+    right           : 0px;
+    font-size       : 12px;
+    font-weight     : 400;
+    color           : #fff;
+    border          : none;
+    padding         : 13px 15px;
+    border-radius   : 6px;
     background-color: #34c379;
-    cursor: pointer;
+    cursor          : pointer;
 }
+
 .searchbar .button:active {
     transform: translateY(-50%) scale(0.98);
 }
 
 /* footer*/
 footer {
-    padding: 0%;
-    margin: 0 auto;
-    background: #111;
-    height: auto;
+    padding    : 0%;
+    margin     : 0 auto;
+    background : #111;
+    height     : auto;
     padding-top: 40px;
-    color: #fff;
-    margin-top: 100px;
+    color      : #fff;
+    margin-top : 100px;
 }
 
 .footer-content {
-    display: flex;
-    align-items: center;
+    display        : flex;
+    align-items    : center;
     justify-content: center;
-    flex-direction: column;
-    text-align: center;
+    flex-direction : column;
+    text-align     : center;
 }
 
 .footer-content h3 {
-    font-size: 2.1rem;
-    font-weight: 500;
+    font-size     : 2.1rem;
+    font-weight   : 500;
     text-transform: capitalize;
-    line-height: 3rem;
+    line-height   : 3rem;
 }
 
 .footer-content p {
-    max-width: 500px;
-    margin: 10px auto;
+    max-width  : 500px;
+    margin     : 10px auto;
     line-height: 20px;
-    font-size: 14px;
-    color: #cacdd2;
+    font-size  : 14px;
+    color      : #cacdd2;
 }
 
 .socials {
-    list-style: none;
-    display: flex;
-    align-items: center;
+    list-style     : none;
+    display        : flex;
+    align-items    : center;
     justify-content: center;
-    margin: 1rem 0 3rem 0;
+    margin         : 1rem 0 3rem 0;
 }
 
 
 .socials a {
     text-decoration: none;
-    color: #fff;
-    padding: 5px;
+    color          : #fff;
+    padding        : 5px;
 }
+
 /* footer*/
 
 /*Code css vui lòng để dưới này giùm*/
+/* order history */
+* {
+    list-style: none;
+    padding   : 0;
+    margin    : 0;
+}
+
+:root {
+    --font-family: 'Poppins', sans-serif;
+}
+
+
+.section {
+    width     : 100%;
+    display   : flex;
+    margin-top: 36px;
+}
+
+.section .nav {
+    width        : 20%;
+    margin-left  : 30px;
+    margin-right : 24px;
+    border-radius: 8px;
+    border       : 1px solid #E6E6E6;
+    background   : #FFF;
+}
+
+.section .nav-title {
+    padding    : 24px 0 16px 20px;
+    font-size  : 20px;
+    font-family: var(--font-family);
+    line-height: 30px;
+    color      : #1a1a1a;
+}
+
+/* navigation */
+.nav {
+    overflow: hidden;
+}
+
+.nav-list {
+    width         : 100%;
+    list-style    : none;
+    display       : inline-flex;
+    padding-bottom: 0px;
+    flex-direction: column;
+    align-items   : flex-start;
+}
+
+.nav-item {
+    display    : flex;
+    padding    : 16px 20px;
+    width      : 100%;
+    align-items: center;
+    transition : 0.3s;
+    color      : #666;
+    font-family: var(--font-family);
+    font-size  : 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.nav-item:hover {
+    cursor   : pointer;
+    transform: translateX(2px);
+}
+
+.nav-item.active {
+    background-color: #E6E6E6;
+    transform       : translateX(2px);
+    border-left     : 1px solid #00B207;
+}
+
+.nav-item .img-logo {
+    width       : 24px;
+    height      : 24px;
+    padding     : 3px;
+    margin-right: 10px;
+
+}
+
+.nav i {
+    margin-right: 10px;
+}
+
+/* table order */
+.order-history {
+    width        : 80%;
+    height       : 742px;
+    border-radius: 8px;
+    border       : 1px solid var(--gray-scale-gray-100, #E6E6E6);
+    background   : var(--gray-scale-white, #FFF);
+}
+
+.order-history .order-title {
+    color      : #1A1A1A;
+    font-family: var(--font-family);
+    font-size  : 20px;
+    font-weight: 500;
+    line-height: 30px;
+    margin     : 16px 0 0 24px;
+}
+
+.table-order {
+    width          : 100%;
+    border-collapse: collapse;
+    margin-top     : 16px;
+}
+
+.table-order th {
+    text-align: left;
+}
+
+.table-head {
+    background    : #F2F2F2;
+    height        : 36px;
+    font-family   : var(--font-family);
+    font-size     : 12px;
+    font-weight   : 500;
+    line-height   : 12px;
+    letter-spacing: 0.36px;
+    text-transform: uppercase;
+}
+
+.table-head th:first-child {
+    padding: 12px 0 12px 24px;
+}
+
+.table-product {
+    height     : 45px;
+    font-family: var(--font-family);
+    font-size  : 14px;
+    font-weight: 400;
+    
+    line-height: 21px;
+}
+.table-product img{
+    margin-right: 12px;
+}
+.table-product td{
+    border-bottom: 1px solid #e6e6e6;
+    vertical-align: middle
+}
+
+.table-product td:first-child {
+    padding-left: 24px;
+}
+
+.table-product td:last-child a {
+    color: #00B207;}
+
+
+/* Pagination */
+.paginate {
+    margin-top: 32px;
+}
+
+.center {
+    text-align: center;
+}
+
+.pagination {
+    display        : flex;
+    justify-content: center;
+    align-items    : flex-start;
+}
+
+.pagination a {
+    width          : 20px;
+    height         : 20px;
+    color          : black;
+    padding        : 8px;
+    text-decoration: none;
+    transition     : background-color .3s;
+    border         : 1px solid #ddd;
+    border-radius  : 50%;
+    margin         : 0 4px;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color           : white;
+    border          : 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+/* order detail */
+.order-detail {
+    width        : 80%;
+    border-radius: 8px;
+    border       : 1px solid #E6E6E6;
+    background   : #FFF;
+}
+
+.order-head {
+    padding   : 16px 24px;
+    box-shadow: 0px 1px 0px 0px #E5E5E5;
+}
+
+.order-head,
+.order-head--title {
+    display        : flex;
+    justify-content: space-between;
+}
+
+.order-head--title p {
+    color      : #1A1A1A;
+    font-family: var(--font-family);
+    font-size  : 20px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.order-head ul {
+    display    : flex;
+    align-items: center;
+    color      : #4D4D4D;
+    font-family: var(--font-family);
+    font-size  : 14px;
+    font-style : normal;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.order-head ul li {
+    align-self: center;
+}
+
+.order-head ul li::before {
+    content: ".";
+    display: inline-block;
+    margin : 0 8px;
+}
+
+.back-to {
+    color      : #00B207;
+    font-family: var(--font-family);
+    font-size  : 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.order-info {
+    margin-top   : 24px;
+    display      : grid;
+    grid-template: 100% / 55% 45%;
+}
+
+.order-address {
+    margin       : 0 24px;
+    display      : grid;
+    border-radius: 6px;
+    border       : 1px solid #E6E6E6;
+    background   : #FFF;
+}
+
+.order-address table {
+    border-collapse: collapse;
+}
+
+.order-address table .title th {
+    color         : #999;
+    font-family   : var(--font-family);
+    font-size     : 14px;
+    font-weight   : 500;
+    line-height   : 14px;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    border-bottom : 1px solid #E6E6E6;
+    border-left   : 1px solid #E6E6E6;
+    text-align    : left;
+    padding       : 18px 0 18px 20px;
+}
+
+.order-address table tr td {
+    padding-left: 20px;
+    padding-top : 14px;
+    border-left : 1px solid #E6E6E6;
+}
+
+.order-address table tr .phone td:last-child {
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.order-address table .name td {
+    color      : #1A1A1A;
+    font-family: var(--font-family);
+    font-size  : 16px;
+    font-style : normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.order-address table .address td {
+    color      : #666;
+    font-family: var(--font-family);
+    font-size  : 14px;
+    font-style : normal;
+    font-weight: 400;
+    line-height: 21px;
+    padding    : 8px 10px 36px 20px;
+}
+
+.order-address table .email td,
+.order-address table .phone td {
+    color         : #999;
+    font-family   : var(--font-family);
+    font-size     : 12px;
+    font-style    : normal;
+    font-weight   : 500;
+    line-height   : 12px;
+    letter-spacing: 0.36px;
+    text-transform: uppercase;
+}
+
+.order-address table .email-address td,
+.order-address table .phone-number td {
+    color      : #1A1A1A;
+    font-family: var(--font-family);
+    font-size  : 14px;
+    font-style : normal;
+    font-weight: 400;
+    line-height: 21px;
+    padding-top: 0;
+}
+
+.order-address table .phone-number td {
+    padding-bottom: 20px;
+}
+
+.order-price {
+    border-radius: 6px;
+    border       : 1px solid #E6E6E6;
+    background   : #FFF;
+    margin-right : 24px;
+}
+
+.order-price-info {
+    display        : flex;
+    justify-content: space-around;
+    padding        : 18px 20px;
+    border-bottom  : 1px solid #E6E6E6;
+}
+
+.order-id p:first-child,
+.payment p:first-child {
+    color         : #999;
+    font-family   : var(--font-family);
+    font-size     : 12px;
+    font-style    : normal;
+    font-weight   : 500;
+    line-height   : 12px;
+    letter-spacing: 0.36px;
+    text-transform: uppercase;
+}
+
+.order-id p:last-child,
+.payment p:last-child {
+    color      : #1A1A1A;
+    font-family: var(--font-family);
+    font-size  : 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.total-price {
+    padding: 18px 20px;
+}
+
+.total-price .sub-total,
+.total-price .discount,
+.total-price .shipping,
+.total-price .total {
+    display        : flex;
+    padding        : 12px 0px;
+    justify-content: space-between;
+    align-items    : center;
+    border-bottom  : 1px solid #e6e6e6;
+}
+
+.total-price .sub-total p,
+.total-price .discount p,
+.total-price .shipping p {
+    color      : #666;
+    font-family: var(--font-family);
+    font-size  : 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.total-price .sub-total p:last-child,
+.total-price .discount p:last-child,
+.total-price .shipping p:last-child {
+    color      : #1A1A1A;
+    font-family: var(--font-family);
+    font-weight: 500;
+}
+
+.total-price .total {
+    border     : none;
+    font-size  : 18px;
+    font-family: var(--font-family);
+    line-height: 27px;
+    color      : #1a1a1a;
+    font-weight: 400;
+}
+
+.total-price .total p:last-child {
+    color      : #2C742F;
+    font-weight: 600;
+}
